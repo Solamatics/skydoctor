@@ -1,56 +1,41 @@
-
-import {AppBar, Box, IconButton, Toolbar} from "@mui/material";
+import { AppBar, Box, Toolbar, Button, Typography, Stack } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import Logo from "../../assets/img/logo.png";
+import LocationCityIcon from "@mui/icons-material/LocationCity";
+import PatientImg from "../../assets/img/patients/patient.jpg";
 
-
-export default function TopBar({location, toggleNav}){
-    return (
-        <AppBar
-            sx={{
-                backgroundColor: '#0C4F8A',
-                borderBottom: '1px solid #f0f0f0',
-                padding: '5px 20px',
-                display: 'block'
-            }} elevation={0}
-            position={'fixed'}
-            component="nav">
-            <Toolbar>
-
-                <Box component={'div'} sx={{flexGrow: 1, color:'white'}}>
-
-                    <h6
-                        style={{
-                            color: '#fff',
-                            fontSize: '10px',
-                            fontWeight: '500',
-                            textTransform:'capitalize',
-                            margin: '5px 0 0'
-                        }}
-                    >
-                        <Link style={{color:'white', }} to={'/patient/dashboard'}>Home</Link>  / {location}
-                    </h6>
-                    <h5 style={{
-                        color: '#fff',
-                        fontSize: '17px',
-                        fontWeight: '700',
-                        margin: '5px 0 0',
-                        textTransform:'capitalize'
-                    }}>{location}</h5>
-
-                </Box>
-
-                <IconButton
-                    onClick={()=>toggleNav(true)}
-                    sx={{color: '#fff', mr: 0.1, display: {lg: 'none'}}}
-                    aria-label="open drawer"
-                    edge="start"
-                >
-                    <MenuIcon/>
-                </IconButton>
-
-
-            </Toolbar>
-        </AppBar>
-    )
+export default function TopBar({ location, toggleNav }) {
+  return (
+    <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static" sx={{ background: "#fff", boxShadow: "none" }}>
+        <Toolbar>
+          <Box sx={{ flexGrow: 1 }}>
+            <img src={Logo} alt="logo" style={{ height: "80px" }} />
+          </Box>
+          <Stack
+            direction="row"
+            alignItems="center"
+            spacing={2}
+            sx={{ color: "#D1D7D7" }}
+          >
+            <Box>
+              <LocationCityIcon color="#808080" sx={{ fontSize: "40px" }} />
+            </Box>
+            <Box>
+              <Typography>Contact</Typography>
+              <Typography sx={{ color: "#000" }}>+1 315 369 5943</Typography>
+            </Box>
+            <Box>
+              <img
+                src={PatientImg}
+                alt="avatar"
+                style={{ width: "30px", height: "30px", borderRadius: "50%" }}
+              />
+            </Box>
+          </Stack>
+        </Toolbar>
+      </AppBar>
+    </Box>
+  );
 }
