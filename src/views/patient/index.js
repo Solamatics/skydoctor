@@ -4,6 +4,7 @@ import TopBar from "../../components/patient/topbar";
 import Sidebar from "../../components/patient/sidebar";
 import { useEffect, useState } from "react";
 import MobileSidebar from "../../components/patient/mobileSidebar";
+import Footer from "../../components/guest/footer";
 
 export default function Index() {
   let { pathname } = useLocation();
@@ -68,6 +69,7 @@ export default function Index() {
           <Outlet />
         </Grid>
       </Grid>
+      <Footer />
     </Box>
   );
 }
