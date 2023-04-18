@@ -71,7 +71,11 @@ export default function Footer() {
   return (
     <Box
       component={"footer"}
-      sx={{ padding: "20px 0 0", backgroundColor: "#00329B", margin: "0" }}
+      sx={{
+        padding: "20px 0 0",
+        backgroundColor: "rgb(13,79,138)",
+        margin: "0",
+      }}
     >
       <Grid container spacing={2} sx={{ py: 2, px: 3 }}>
         <Grid item xs={12} sm={6} lg={5} md={5}>
