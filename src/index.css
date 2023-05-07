@@ -754,3 +754,11 @@ table.table td h2.table-avatar {
   top: 0;
   width: 100%;
 }
+
+
+.list-item {
+  cursor: pointer;
+}
+.list-item.active {
+  background-color: yellow;
+}

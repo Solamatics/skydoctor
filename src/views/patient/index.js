@@ -23,7 +23,7 @@ export default function Index() {
     "/patient/checkout",
     "/patient/booking-success",
     "/patient/chat",
-    "/patient/invoice-details",
+    "/patient/invoice-details"
   ];
 
   const checkPath = (path) => {

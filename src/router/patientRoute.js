@@ -15,76 +15,81 @@ import MedicalDetails from "../views/patient/medicalDetails/medicalDetails";
 import Profile from "../views/patient/profile/profile";
 import ChangePassword from "../views/patient/password/changePassword";
 import OrderDetails from "../views/patient/orders/orderDetails";
+import Plans from "../views/patient/plans/plans";
 
 export const PatientRoute = [
-    {
-        path:'/patient/onboarding',
-        element:<Onboarding/>,
-    },
-    {
-        path:'/patient/',
-        element: <Index/>,
-        children:[
-            {
-                path:'dashboard',
-                element:<Dashboard/>
-            },
-            {
-                path:'favourites',
-                element:<Favorite/>
-            },
-            {
-                path:'doctor-profile',
-                element:<DoctorProfile/>
-            },
-            {
-                path:'booking',
-                element:<Booking/>
-            },
-            {
-                path:'checkout',
-                element:<Checkout/>
-            },
-            {
-                path:'booking-success',
-                element:<BookingSuccess/>
-            },
-            {
-                path:'dependents',
-                element:<Dependent/>
-            },
-            {
-                path:'chat',
-                element:<Message/>
-            },
-            {
-                path:'accounts',
-                element:<Account/>
-            },
-            {
-                path:'orders',
-                element:<Order/>
-            },
-            {
-                path:'medical-records',
-                element:<MedicalRecords/>
-            },
-            {
-                path:'medical-details',
-                element:<MedicalDetails/>
-            },
-            {
-                path:'profile-settings',
-                element:<Profile/>
-            },
-            {
-                path:'change-password',
-                element:<ChangePassword/>
-            },
-            {
-                path:'invoice-details',
-                element:<OrderDetails/>
-            },
-        ]
-    }
-]
+  {
+    path: "/patient/onboarding",
+    element: <Onboarding />,
+  },
+  {
+    path: "/patient/",
+    element: <Index />,
+    children: [
+      {
+        path: "dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "favourites",
+        element: <Favorite />,
+      },
+      {
+        path: "doctor-profile",
+        element: <DoctorProfile />,
+      },
+      {
+        path: "booking",
+        element: <Booking />,
+      },
+      {
+        path: "plans",
+        element: <Plans />,
+      },
+      {
+        path: "checkout",
+        element: <Checkout />,
+      },
+      {
+        path: "booking-success",
+        element: <BookingSuccess />,
+      },
+      {
+        path: "dependents",
+        element: <Dependent />,
+      },
+      {
+        path: "chat",
+        element: <Message />,
+      },
+      {
+        path: "accounts",
+        element: <Account />,
+      },
+      {
+        path: "orders",
+        element: <Order />,
+      },
+      {
+        path: "medical-records",
+        element: <MedicalRecords />,
+      },
+      {
+        path: "medical-details",
+        element: <MedicalDetails />,
+      },
+      {
+        path: "profile-settings",
+        element: <Profile />,
+      },
+      {
+        path: "change-password",
+        element: <ChangePassword />,
+      },
+      {
+        path: "invoice-details",
+        element: <OrderDetails />,
+      },
+    ],
+  },
+];
