@@ -65,76 +65,76 @@ export const routes = [
     name: "company",
     icon: "share",
     route: "/doctor/social-media",
-    subMenu: [
-      {
-        title: "My Invites",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "My Referrals",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Rate Us",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-    ],
+    // subMenu: [
+    //   {
+    //     title: "My Invites",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "My Referrals",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Rate Us",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    // ],
   },
   {
     title: "Transactions",
     icon: "share",
     route: "/doctor/social-media",
     name: "transaction",
-    subMenu: [
-      {
-        title: "My Coupons/Offers",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "My Orders",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "My Invoices",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Payment Methods",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Accounts",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Request Funds",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Withdrawals",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Favourites",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Reviews",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-    ],
+    // subMenu: [
+    //   {
+    //     title: "My Coupons/Offers",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "My Orders",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "My Invoices",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Payment Methods",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Accounts",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Request Funds",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Withdrawals",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Favourites",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Reviews",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    // ],
   },
   {
     title: "My Profiles",
