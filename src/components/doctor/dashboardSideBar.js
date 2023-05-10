@@ -21,10 +21,19 @@ export default function Sidebar({ location, toggleNav, mobileNav }) {
     company: false,
     setting: false,
   });
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
   const dropdownHandler = (prop) => () =>
     setDropdown((prev) => (prev = { ...dropdown, [prop]: !prev[prop] }));
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
+
+  const handleListItemClick = (event, index, path) => {
+    // event.preventDefault();
+    setSelectedIndex(index);
+    navigate(path);
+    console.log(index);
+  };
 
   return (
     <div className="profile-sidebar">
@@ -40,7 +49,7 @@ export default function Sidebar({ location, toggleNav, mobileNav }) {
             <h3>Richard Wilson</h3>
             <div className="patient-details">
               <h5>
-                <i className="fas fa-birthday-cake"></i> 24 Jul 1983, 38 years
+                <i className="fas fa-birthday-cake"></i> 24 Jul 1983, 36 years
               </h5>
               <h5 className="mb-0">
                 <i className="fas fa-map-marker-alt"></i> Newyork, USA
@@ -54,7 +63,17 @@ export default function Sidebar({ location, toggleNav, mobileNav }) {
           <Link passHref>
             {routes.map((item, index) => (
               <div key={index}>
-                <ListItemButton onClick={dropdownHandler(item.name)}>
+                <ListItemButton
+                  selected={selectedIndex === index}
+                  onClick={(event) =>
+                    handleListItemClick(event, index, item.route)
+                  }
+                  sx={{
+                    "&.Mui-selected": {
+                      color: "#0DE0FE",
+                    },
+                  }}
+                >
                   <ListItemText
                     primary={item.title}
                     sx={{ color: "black", "&:hover": { color: "black" } }}

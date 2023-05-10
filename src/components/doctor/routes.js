@@ -55,37 +55,10 @@ export const routes = [
     route: "/doctor/profile",
   },
   {
-    title: "Communication",
+    title: "Message",
     name: "communication",
     icon: "share",
-    route: "/doctor/social-media",
-    subMenu: [
-      {
-        title: "Video",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Voice",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Chat Message",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Social Media",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "My Blog",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-    ],
+    route: "/doctor/message",
   },
   {
     title: "Company",
