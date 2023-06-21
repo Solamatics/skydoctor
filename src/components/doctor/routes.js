@@ -5,16 +5,15 @@ export const routes = [
     icon: "dashboard",
     route: "/doctor/dashboard",
   },
-  { title: "My Calendar", icon: "book_online", route: "/doctor/appointments" },
+  // { title: "My Calendar", icon: "book_online", route: "/doctor/appointments" },
   {
-    title: "My Appointment",
+    title: "Appointments",
     name: "appointment",
     icon: "personal_injury",
     route: "/doctor/my-patients",
   },
   {
     title: "E-Store",
-    name: "estore",
     icon: "hourglass_bottom",
     route: "/doctor/schedule-timing",
   },
@@ -147,28 +146,28 @@ export const routes = [
     name: "setting",
     icon: "share",
     route: "/doctor/social-media",
-    subMenu: [
-      {
-        title: "Language",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Country/State/City",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Change Passwords",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-      {
-        title: "Notification",
-        icon: "fas fa-user-cog",
-        route: "/patient/profile-settings",
-      },
-    ],
+    // subMenu: [
+    //   {
+    //     title: "Language",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Country/State/City",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Change Passwords",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    //   {
+    //     title: "Notification",
+    //     icon: "fas fa-user-cog",
+    //     route: "/patient/profile-settings",
+    //   },
+    // ],
   },
   { title: "Sign Out", name: "signout", icon: "logout", route: "" },
 ];
